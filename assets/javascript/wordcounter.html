@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+   
+
+</head>
+
+<body>
+
+    <script>
+        var input= prompt("Write a sentence to get the word counted"); 
+        console.log(input); 
+        var letterArray=input.trim().split("")
+        console.log(letterArray);
+        var spaceCounter=0; 
+
+    if(input !== ""){
+        spaceCounter=1;
+        for (var i = 0; i<letterArray.length; i++){
+            if(letterArray[i]===" " && letterArray[i+1] !== " "){
+                spaceCounter++
+        }
+    }
+}
+
+alert("You Have "+spaceCounter+ " Words."); 
+    </script>
+</body>
+
+</html>
