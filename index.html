@@ -2,12 +2,10 @@
 <html lang="en-us">
 
 <head>
-    <meta charset="UTF-8">
-    <title></title>
-    <script
-  src="https://code.jquery.com/jquery-3.3.1.js"
-  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-  crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <title></title>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
   <script type="text/javascript" src="assets/javascript/app.js"></script>
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/style.css">
@@ -15,7 +13,43 @@
 </head>
 
 <body>
-    <h1 id="salad"></h1>
+  <div id="background">
+  <div class="container">
+
+
+    <div id="header">
+      <h1>Random Trivia Quiz</h1>
+    </div>
+
+    <div id="start">
+      <input id="startButton" type="button" value="start" />
+    </div>
+
+    <div id="playScreen" style="display: none">
+      <div id="correctDisplayScreen">
+        <div id="correctOrNot" style="display: none"></div>
+      </div>
+      <div id="timer">
+        <h2>Time Remaining: <span id="countdownNum">15</span> Seconds</h2>
+      </div>
+      <h3 id="question"></h3>
+      <div id="questionDump">
+
+        <h4 id="salad"></h4>
+      </div>
+
+
+
+
+    </div>
+    <div id="results" style="display: none">
+      <div id="correctAnswers"></div>
+      <div id="incorrectAnswers"></div>
+      <input type="button" id="reset" value="reset" />
+    </div>
+
+  </div>
+  </div>
 </body>
 
 </html>

@@ -1,0 +1,25 @@
+*{
+    background:yellow;
+    text-align: center;  
+    width:auto;
+    height:auto; 
+
+}
+
+.container{
+    margin-top:20%; 
+
+}
+
+.clickB{
+    margin: 15px; 
+   padding:10px 25px; 
+    background: blue;
+    color:white; 
+    font-weight: 900;
+    font-size: 110%;
+    overflow: auto; 
+}
+
+
+
